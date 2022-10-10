@@ -16,7 +16,7 @@ export const loginSchema = joi.object<CreateUserData>({
 
 export const registrationSchema = joi.object<CreateUserData>({
   name: joi.string().required().label("Name is a required field"),
-  last_name: joi.string().required().label("Last name is a required field"),
+  lastName: joi.string().required().label("Last name is a required field"),
   email: joi
     .string()
     .email()
@@ -27,7 +27,7 @@ export const registrationSchema = joi.object<CreateUserData>({
     .min(10)
     .required()
     .label("Password is a required field"),
-  confirm_password: joi
+  confirmPassword: joi
     .string()
     .min(10)
     .required()

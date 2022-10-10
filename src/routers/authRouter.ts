@@ -9,5 +9,5 @@ authRouter.post(
   validateSchemaMiddleware(registrationSchema),
   signUp
 );
-authRouter.post("/signin", validateSchemaMiddleware(loginSchema), signIn);
+authRouter.post("/login", validateSchemaMiddleware(loginSchema), signIn);
 export default authRouter;
