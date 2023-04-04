@@ -6,7 +6,7 @@ export const nailPolishSchema = joi.object<NailPolishData>({
   brand: joi.string().min(2).required().label("Brand is a required field"),
   shade: joi.string().min(2).required().label("Shade is a required field"),
   finish: joi.string().min(2).required().label("Finish is a required field"),
-  expirationDate: joi
+  expiration_date: joi
     .date()
     .required()
     .label("Expiration date is a required field"),
