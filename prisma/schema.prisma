@@ -13,10 +13,9 @@ datasource db {
 model User {
   id Int @id @default(autoincrement())
   name String
-  lastName String
+  last_name String @default("")
   email String @unique
   password String
-  confirmPassword String
   @@map("users")
 }
 
@@ -26,6 +25,6 @@ model NailPolish {
   brand String
   shade String
   finish String
-  expirationDate String? @db.VarChar(8)
+  expiration_date String? @db.VarChar(10)
  @@map("nailPolishes")  
 }
