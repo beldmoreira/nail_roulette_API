@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,20 +8,22 @@ datasource db {
 }
 
 model User {
-  id Int @id @default(autoincrement())
-  name String
-  last_name String @default("")
-  email String @unique
-  password String
+  id        Int    @id @default(autoincrement())
+  email     String @unique
+  password  String
+  name      String
+  last_name String
+
   @@map("users")
 }
 
 model NailPolish {
-  id Int @id @default(autoincrement()) 
-  name String @unique
-  brand String
-  shade String
-  finish String
+  id              Int     @id @default(autoincrement())
+  name            String  @unique
+  brand           String
+  shade           String
+  finish          String
   expiration_date String? @db.VarChar(10)
- @@map("nailPolishes")  
+
+  @@map("nailPolishes")
 }
