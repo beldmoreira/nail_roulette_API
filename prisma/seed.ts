@@ -8,19 +8,19 @@ async function main() {
         name: "Isabela",
         last_name: "Moreira",
         email: "isabelamoreira@hotmail.com",
-        password: "soidolosflutime",
+        password: "isabelaM2*",
       },
       {
         name: "Dengo",
         last_name: "Moreira",
         email: "dengo_gato@gmail.com",
-        password: "timedeguerreiros",
+        password: "timefelD5#",
       },
       {
         name: "Dara",
         last_name: "Moreira",
         email: "dara_gata@gmail.com",
-        password: "luideverso22",
+        password: "luideeV77@",
       },
     ],
   });
